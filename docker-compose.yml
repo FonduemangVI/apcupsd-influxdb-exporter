@@ -7,7 +7,7 @@ services:
     environment:
       WATTS: 1500 # if your ups doesn't have NOMPOWER, set this to be the rated max power, if you do have NOMPOWER, don't set this variable
       APCUPSD_HOST: localhost # host running apcupsd
-      APCUPSD_HOST: 3551 # port on host running apcupsd
+      APCUPSD_PORT: 3551 # port on host running apcupsd
       INFLUXDB_HOST: localhost # host running influxdb
       HOSTNAME: unraid # host you want to show up in influxdb, optional defaults to apcupsd-influxdb-exporter
       INFLUXDB_DATABASE: apcupsd # db name for influxdb. optional, defaults to apcupsd
