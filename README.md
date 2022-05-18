@@ -7,7 +7,7 @@ tool. Dockerfiles included for both intel and ARM (RaspberryPi or comparable) ch
 ## How to build
 Building the image is straight forward:
 * Git clone this repo
-* `docker build -t fonduemangvi/apcupsd-influxdb-exporter  .`
+* `docker build -t fonduemangvi/apcupsd-influxdb-exporter`
 
 ## Environment Variables
 These are all the available environment variables, along with some example values, and a description.
