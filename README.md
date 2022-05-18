@@ -70,10 +70,14 @@ services:
     restart: always
     environment:
       WATTS: 1500
-      APCUPSD_HOST: 10.0.1.11
+      APCUPSD_HOST: localhost
       APCUPSD_PORT: 3551
-      INFLUXDB_HOST: 10.0.1.11
+      INFLUXDB_HOST: localhost
       HOSTNAME: unraid
+      INFLUXDB_DATABASE: apcupsd
+      INFLUXDB_USER:
+      INFLUXDB_PASSWORD:
+      INFLUXDB_PORT: 8086
 ```
 
 If you want to debug the apcaccess output or the send to influxdb, set the environment variable "VERBOSE" to "true"
