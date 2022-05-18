@@ -54,6 +54,7 @@ docker run --rm  -d --name="apcupsd-influxdb-exporter" \
     -e "HOSTNAME=unraid" \
     -e "INFLUXDB_HOST=10.0.1.11" \
     -e "APCUPSD_HOST=10.0.1.11" \
+    -e "APCUPSD_PORT=3551" \
     -t fonduemangvi/apcupsd-influxdb-exporter
 ```
 Note: if your UPS does not include the NOMPOWER metric, you will need to include the WATTS environment variable in order to compute the live-power consumption 
